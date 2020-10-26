@@ -66,141 +66,61 @@ body .cursor__ball circle {
 
 </head>
 
-<body translate="no">
-    <div class="cursor">
-    <div class="cursor__ball cursor__ball--big " style="transform: matrix(1, 0, 0, 1, 503, 574);">
-      <svg height="30" width="30">
-        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-      </svg>
-    </div>
-    
-    <div class="cursor__ball cursor__ball--small" style="transform: matrix(1, 0, 0, 1, 513, 582);">
-      <svg height="10" width="10">
-        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-      </svg>
-    </div>
+<body translate="no" >
+  <div class="cursor">
+  
+  <div class="cursor__ball cursor__ball--small">
+    <svg height="10" width="10">
+      <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+    </svg>
   </div>
+</div>
+
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
   
-      <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+      <script id="rendered-js" >
+const $bigBall = document.querySelector('.cursor__ball--big');
+const $smallBall = document.querySelector('.cursor__ball--small');
+const $hoverables = document.querySelectorAll('.hoverable');
+
+// Listeners
+document.body.addEventListener('mousemove', onMouseMove);
+for (let i = 0; i < $hoverables.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+  $hoverables[i].addEventListener('mouseenter', onMouseHover);
+  $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+}
+
+// Move the cursor
+window.CP.exitedLoop(0);function onMouseMove(e) {
+  TweenMax.to($bigBall, .4, {
+    x: e.pageX - 15,
+    y: e.pageY - 15 });
+
+  TweenMax.to($smallBall, .1, {
+    x: e.pageX - 5,
+    y: e.pageY - 7 });
+
+}
+
+// Hover an element
+function onMouseHover() {
+  TweenMax.to($bigBall, .3, {
+    scale: 4 });
+
+}
+function onMouseHoverOut() {
+  TweenMax.to($bigBall, .3, {
+    scale: 1 });
+
+}
+//# sourceURL=pen.js
+    </script>
+
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-   
-  <!-- Codes by HTML.am -->
-  
-  <!-- CSS Code -->
-  <style type="text/css" scoped="">
-  .GeneratedMarquee {
-cursor: none;
-display: inline-block;
-overflow: hidden;
-white-space: nowrap;
-font-family: Courier, monospace;
-font-size: large;
-font-weight: bold;
-line-height: 1.3em;
-text-align: center;
-color: #FFFFFF;
-padding: 0.5em;
-margin-block-start: 5em;
-margin-right: 23.5em;
-margin-left: 23em;
-  }
-  </style>
-  
-  <!-- HTML Code -->
-  <marquee class="GeneratedMarquee" direction="right" scrollamount="15" behavior="scroll">Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond
-  Vennaskond Vennaskond Vennaskond Vennaskond</marquee>
-  
-  
-  
-        <script id="rendered-js">
-  const $bigBall = document.querySelector('.cursor__ball--big');
-  const $smallBall = document.querySelector('.cursor__ball--small');
-  const $hoverables = document.querySelectorAll('.hoverable');
-  
-  // Listeners
-  document.body.addEventListener('mousemove', onMouseMove);
-  for (let i = 0; i < $hoverables.length; i++) {if (window.CP.shouldStopExecution(0)) break;
-    $hoverables[i].addEventListener('mouseenter', onMouseHover);
-    $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
-  }
-  
-  // Move the cursor
-  window.CP.exitedLoop(0);function onMouseMove(e) {
-    TweenMax.to($bigBall, .4, {
-      x: e.pageX - 15,
-      y: e.pageY - 15 });
-  
-    TweenMax.to($smallBall, .1, {
-      x: e.pageX - 5,
-      y: e.pageY - 7 });
-  
-  }
-  
-  // Hover an element
-  function onMouseHover() {
-    TweenMax.to($bigBall, .3, {
-      scale: 4 });
-  
-  }
-  function onMouseHoverOut() {
-    TweenMax.to($bigBall, .3, {
-      scale: 1 });
-  
-  }
-  //# sourceURL=pen.js
-      </script>
-  
-    
-  
-  
-  
-  
-   
-  </body>
+
+</body>
 
 </html>
  
